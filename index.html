@@ -87,7 +87,7 @@
 
 <body>
 <div class="box">
-    <h1>Sélectionnez une date</h1>
+    <h1>Gestion de Stock</h1>
 
     <input type="date" id="date" required>
 
@@ -113,7 +113,6 @@
 
       btn.textContent = messages[fail % messages.length];
 
-      // Limites de déplacement global
       const maxX = window.innerWidth - btn.offsetWidth - 10;
       const maxY = window.innerHeight - btn.offsetHeight - 10;
 
@@ -124,7 +123,6 @@
       btn.style.left = x + "px";
       btn.style.top = y + "px";
 
-      // Génération de faux boutons
       if (fail > 4 && fail < 15) {
         const fake = document.createElement("div");
         fake.className = "fake-btn";
